@@ -1,0 +1,488 @@
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#FFFFFF">
+  <meta name="description" content="EcoFill — un sistem de refill pentru produsele de curățenie. Păstrezi recipientul, reumpli produsul și reduci ambalajele de unică folosință.">
+  <title>EcoFill — Umplii recipientul, nu planeta cu plastic</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add("js");</script>
+  <script src="app.js" defer></script>
+</head>
+<body id="top" class="page-home">
+  <a class="skip-link" href="#main">Sari la conținut</a>
+  <div class="progress" aria-hidden="true"><span id="progress-bar"></span></div>
+
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="EcoFill — pagina principală">
+        <svg class="brand-leaf" viewBox="0 0 32 36" aria-hidden="true">
+          <path d="M16 33C13 23 5 18 7 9C9 2 18 1 27 3C28 13 24 22 18 27Z" fill="currentColor"/>
+          <path d="M16 33C17 23 20 12 26 5" fill="none" stroke="#F7F8F2" stroke-width="2" stroke-linecap="round"/>
+          <path d="M20 20L12 12M22 13L17 8" stroke="#F7F8F2" stroke-width="1.6" stroke-linecap="round"/>
+        </svg>
+        <span class="brand-word"><span>eco</span><span>fill</span></span>
+      </a>
+
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Deschide meniul">
+        <span></span><span></span>
+      </button>
+
+      <nav class="main-nav" id="main-nav" aria-label="Navigare principală">
+        <a href="index.html" aria-current="page">Acasă</a>
+        <a href="about.html">Despre noi</a>
+        <a href="product.html">Despre produs</a>
+        <a href="#contact">Contact</a>
+        <a class="nav-cta" href="mailto:salut@ecofill.ro?subject=Salut%20EcoFill">Scrie-ne <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="opening" aria-labelledby="opening-title">
+      <div class="container opening-meta opening-meta--top">
+        <span>ECO / REFILL SYSTEM</span>
+        <span>CONCEPT · ROMÂNIA · 2026</span>
+      </div>
+
+      <div class="container opening-main">
+        <div class="opening-copy">
+          <p class="eyebrow opening-kicker">
+            <span class="eyebrow-dot" aria-hidden="true"></span>
+            Un sistem simplu pentru curățenie
+          </p>
+          <h1 class="wordmark" id="opening-title">
+            <span class="wordmark-eco">eco</span>
+            <span class="wordmark-fill">fill<svg class="wordmark-leaf" viewBox="0 0 32 36" aria-hidden="true"><path d="M16 33C13 23 5 18 7 9C9 2 18 1 27 3C28 13 24 22 18 27Z" fill="currentColor"/><path d="M16 33C17 23 20 12 26 5" fill="none" stroke="#F7F8F2" stroke-width="2" stroke-linecap="round"/></svg></span>
+          </h1>
+          <p class="slogan">Umplii recipientul,<br><span>nu planeta cu plastic.</span></p>
+          <p class="opening-note">Un concept de refill care pune recipientul înaintea ambalajului de unică folosință.</p>
+        </div>
+
+        <div class="opening-art" aria-hidden="true">
+          <span class="opening-art-index">01 / CICLU</span>
+          <svg class="opening-illustration" viewBox="0 0 520 620">
+            <defs>
+              <linearGradient id="leafHeroFill" x1="0.18" y1="0.02" x2="0.82" y2="0.98">
+                <stop offset="0" stop-color="#2F7C50"/>
+                <stop offset=".42" stop-color="#1C5839"/>
+                <stop offset="1" stop-color="#0F3823"/>
+              </linearGradient>
+              <radialGradient id="leafHeroSheen" cx="0.62" cy="0.28" r="0.52">
+                <stop offset="0" stop-color="#FFFFFF" stop-opacity=".22"/>
+                <stop offset=".55" stop-color="#FFFFFF" stop-opacity=".07"/>
+                <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+              </radialGradient>
+              <radialGradient id="leafHeroShade" cx="0.36" cy="0.62" r="0.46">
+                <stop offset="0" stop-color="#0B2C1D" stop-opacity=".26"/>
+                <stop offset="1" stop-color="#0B2C1D" stop-opacity="0"/>
+              </radialGradient>
+              <clipPath id="leafHeroClip">
+                <path d="M390 80C387.6 81.7 385.6 83.3 375.8 90C365.9 96.7 344.9 110 330.9 120C316.9 130 303.5 140 291.8 150C280.1 160 269.9 170 260.6 180C251.4 190 243.4 200 236.4 210C229.4 220 223.5 230 218.4 240C213.3 250 209.2 260 205.8 270C202.4 280 199 290 198 300C197 310 198.9 320 199.8 330C200.7 340 201.8 350 203.4 360C204.9 370 206.7 380 209.3 390C211.9 400 215.6 411.7 219.1 420C222.5 428.3 223.8 440 230 440C236.2 440 247.3 428.3 256.4 420C265.6 411.7 276.5 400 284.9 390C293.3 380 300.3 370 306.8 360C313.3 350 318.9 340 324 330C329.2 320 333.7 310 337.6 300C341.6 290 344.9 280 347.8 270C350.6 260 352.9 250 354.6 240C356.3 230 357 220 357.8 210C358.7 200 358.5 190 359.7 180C360.8 170 362.6 160 364.8 150C367.1 140 369.9 130 373.3 120C376.7 110 382.4 96.7 385.2 90C388 83.3 389.2 81.7 390 80Z"/>
+              </clipPath>
+            </defs>
+            <circle cx="280" cy="300" r="224" fill="#A8E66B"/>
+            <circle cx="280" cy="300" r="268" fill="none" stroke="#174D32" stroke-opacity=".18"/>
+            <circle cx="280" cy="300" r="196" fill="none" stroke="#174D32" stroke-opacity=".26" stroke-dasharray="2 9"/>
+            <path d="M390 80C387.6 81.7 385.6 83.3 375.8 90C365.9 96.7 344.9 110 330.9 120C316.9 130 303.5 140 291.8 150C280.1 160 269.9 170 260.6 180C251.4 190 243.4 200 236.4 210C229.4 220 223.5 230 218.4 240C213.3 250 209.2 260 205.8 270C202.4 280 199 290 198 300C197 310 198.9 320 199.8 330C200.7 340 201.8 350 203.4 360C204.9 370 206.7 380 209.3 390C211.9 400 215.6 411.7 219.1 420C222.5 428.3 223.8 440 230 440C236.2 440 247.3 428.3 256.4 420C265.6 411.7 276.5 400 284.9 390C293.3 380 300.3 370 306.8 360C313.3 350 318.9 340 324 330C329.2 320 333.7 310 337.6 300C341.6 290 344.9 280 347.8 270C350.6 260 352.9 250 354.6 240C356.3 230 357 220 357.8 210C358.7 200 358.5 190 359.7 180C360.8 170 362.6 160 364.8 150C367.1 140 369.9 130 373.3 120C376.7 110 382.4 96.7 385.2 90C388 83.3 389.2 81.7 390 80Z" fill="url(#leafHeroFill)"/>
+            <g clip-path="url(#leafHeroClip)">
+              <rect width="520" height="620" fill="url(#leafHeroShade)"/>
+              <rect width="520" height="620" fill="url(#leafHeroSheen)"/>
+            </g>
+            <path d="M230 440C232 462 238 478 244 492" fill="none" stroke="#174D32" stroke-width="5" stroke-linecap="round"/>
+            <path d="M390 80C386.1 81.7 372.4 83.3 366.3 90C360.3 96.7 359.7 110 353.7 120C347.6 130 337.2 140 330.2 150C323.2 160 317.3 170 311.9 180C306.5 190 302.1 200 297.9 210C293.8 220 290.3 230 286.8 240C283.3 250 280 260 277 270C274 280 271.4 290 268.8 300C266.3 310 264 320 261.6 330C259.2 340 257.2 350 254.7 360C252.2 370 248.7 380 246.6 390C244.6 400 245.2 411.7 242.4 420C239.7 428.3 232.1 436.7 230 440" fill="none" stroke="#A8E66B" stroke-width="3" stroke-linecap="round"/>
+            <g fill="none" stroke="#A8E66B" stroke-width="1.6" stroke-linecap="round" opacity=".55">
+              <path d="M338 140Q349.3 134 358.5 106"/>
+              <path d="M338 140Q356.4 134 371.4 106"/>
+              <path d="M304.4 196Q296.7 190 290.4 162"/>
+              <path d="M304.4 196Q329.7 190 350.4 162"/>
+              <path d="M282.9 252Q260.9 246 243 218"/>
+              <path d="M282.9 252Q317.2 246 345.3 218"/>
+              <path d="M266.9 308Q239.2 302 216.5 274"/>
+              <path d="M266.9 308Q304.1 302 334.6 274"/>
+              <path d="M253.6 364Q230.6 358 211.8 330"/>
+              <path d="M253.6 364Q285.7 358 312 330"/>
+              <path d="M244.1 408Q229.6 402 217.8 374"/>
+              <path d="M244.1 408Q266.7 402 285.2 374"/>
+            </g>
+            <path d="M398 438C398 438 432 484 432 507C432 526 417 541 398 541C379 541 364 526 364 507C364 484 398 438 398 438Z" fill="#F7F8F2" stroke="#174D32" stroke-width="3"/>
+            <path d="M386 510C386 518 391 524 399 526" fill="none" stroke="#174D32" stroke-width="2.4" stroke-linecap="round"/>
+            <text x="280" y="608" text-anchor="middle" fill="#60665F" font-family="DM Mono, monospace" font-size="11" letter-spacing="3">REFILL / NOT REPLACE</text>
+          </svg>
+          <span class="opening-art-caption">Un recipient.<br>Multe cicluri.</span>
+        </div>
+      </div>
+
+      <div class="container opening-meta opening-meta--bottom">
+        <span>MAI PUȚIN PLASTIC / MAI MULTĂ GRIJĂ</span>
+        <a class="scroll-cue" href="#idee">
+          <span>Derulează</span>
+          <span class="scroll-cue-line" aria-hidden="true"></span>
+          <span class="scroll-cue-arrow" aria-hidden="true">↓</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="section intro" id="idee">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <span class="section-index">01 — IDEEA</span>
+          <span class="section-note">REFILL / REUSE / REPEAT</span>
+        </div>
+
+        <div class="intro-grid" data-reveal>
+          <h2>Produsul este necesar.<br><span class="mark">Ambalajul de unică folosință nu.</span></h2>
+          <div class="intro-aside">
+            <p class="lead">EcoFill pornește de la un gest simplu: păstrezi recipientul care funcționează deja și îl reumpli atunci când se golește.</p>
+            <p>Nu propunem încă un produs de curățenie. Propunem un sistem care schimbă relația dintre produs, recipient și obiceiul de a cumpăra ambalaje noi de fiecare dată.</p>
+            <a class="arrow-link" href="product.html">Vezi cum funcționează <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+
+        <div class="cycle-strip" data-reveal>
+          <div class="cycle-art" aria-hidden="true">
+            <svg viewBox="0 0 300 220">
+              <path d="M98 34h58v22l18 20v112c0 12-8 18-20 18h-54c-12 0-20-6-20-18V76l18-20z" fill="#F7F8F2" stroke="#174D32" stroke-width="3"/>
+              <rect x="98" y="34" width="58" height="15" rx="3" fill="#174D32"/>
+              <rect x="84" y="118" width="86" height="44" rx="4" fill="#A8E66B"/>
+              <text x="127" y="138" text-anchor="middle" font-family="Manrope, sans-serif" font-size="11" font-weight="800" fill="#174D32">ECO</text>
+              <text x="127" y="151" text-anchor="middle" font-family="Manrope, sans-serif" font-size="11" font-weight="800" fill="#174D32">FILL</text>
+              <path d="M207 97a62 62 0 0 1 0 88M221 111a44 44 0 0 1 0 60" fill="none" stroke="#79C943" stroke-width="4" stroke-linecap="round"/>
+              <path d="M205 78l10 21-24-4M219 99l8 18-21-3" fill="none" stroke="#174D32" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M44 189h215" stroke="#174D32" stroke-opacity=".2" stroke-width="1"/>
+            </svg>
+          </div>
+          <div class="cycle-labels">
+            <span><b>01</b> Păstrezi</span>
+            <span><b>02</b> Reumpli</span>
+            <span><b>03</b> Repeți</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--warm how" id="cum-functioneaza">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <span class="section-index">02 — CUM FUNCȚIONEAZĂ</span>
+          <span class="section-note">TREI PAȘI / ZERO COMPLICAȚII</span>
+        </div>
+
+        <div class="split-heading" data-reveal>
+          <h2>Un obicei nou.<br><span class="mark">Trei pași simpli.</span></h2>
+          <p>Fără pași ascunși și fără ambalaje noi de fiecare dată. Reumplerea devine parte din rutina pe care o ai deja.</p>
+        </div>
+
+        <ol class="steps" data-reveal>
+          <li class="step">
+            <div class="step-top">
+              <span class="step-number">01</span>
+              <svg class="step-icon" viewBox="0 0 120 120" aria-hidden="true">
+                <path d="M44 23h32v18l11 15v44c0 8-5 13-14 13H47c-9 0-14-5-14-13V56l11-15z" fill="none" stroke="currentColor" stroke-width="3"/>
+                <rect x="44" y="23" width="32" height="11" rx="2" fill="currentColor"/>
+                <path d="M40 80h40" stroke="#A8E66B" stroke-width="6"/>
+                <path d="M34 108h52" stroke="currentColor" stroke-width="1.5" opacity=".35"/>
+              </svg>
+            </div>
+            <h3>Aduci recipientul</h3>
+            <p>Alegi o sticlă reutilizabilă și o păstrezi în circuit. Recipientul tău devine parte din sistem, nu un deșeu după o singură utilizare.</p>
+          </li>
+          <li class="step">
+            <div class="step-top">
+              <span class="step-number">02</span>
+              <svg class="step-icon" viewBox="0 0 120 120" aria-hidden="true">
+                <path d="M20 44h52v54c0 7-4 11-11 11H31c-7 0-11-4-11-11z" fill="none" stroke="currentColor" stroke-width="3"/>
+                <rect x="30" y="32" width="32" height="12" rx="2" fill="currentColor"/>
+                <rect x="40" y="20" width="12" height="12" rx="2" fill="currentColor"/>
+                <path d="M74 66h20v30H74" fill="none" stroke="#79C943" stroke-width="4"/>
+                <path d="M84 51l12 15-12 15" fill="none" stroke="#174D32" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M20 109h84" stroke="currentColor" stroke-width="1.5" opacity=".35"/>
+              </svg>
+            </div>
+            <h3>Alegi produsul și cantitatea</h3>
+            <p>Selectezi produsul de care ai nevoie și doza potrivită. Reumpli doar atât cât folosești, fără să cumperi un ambalaj nou.</p>
+          </li>
+          <li class="step">
+            <div class="step-top">
+              <span class="step-number">03</span>
+              <svg class="step-icon" viewBox="0 0 120 120" aria-hidden="true">
+                <path d="M60 106C50 83 27 73 32 48C36 28 58 26 86 29C89 53 82 76 66 91Z" fill="#A8E66B"/>
+                <path d="M60 106C64 79 71 51 86 32" fill="none" stroke="#174D32" stroke-width="3" stroke-linecap="round"/>
+                <path d="M68 77L46 57M76 57L62 43" stroke="#174D32" stroke-width="2.2" stroke-linecap="round"/>
+                <path d="M98 36a40 40 0 0 1-4 58" fill="none" stroke="#79C943" stroke-width="3.5" stroke-linecap="round"/>
+                <path d="M94 84l0 12-11-3" fill="none" stroke="#174D32" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3>Îl reumpli și îl folosești din nou</h3>
+            <p>La final, recipientul rămâne la tine. Fiecare reumplere prelungește viața lui și susține un consum mai atent.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section section--dark impact" id="impact">
+      <div class="container">
+        <div class="section-head section-head--dark" data-reveal>
+          <span class="section-index">03 — IMPACT</span>
+          <span class="section-note">OBIECTIV / NU PROMISIUNE</span>
+        </div>
+
+        <div class="split-heading split-heading--dark" data-reveal>
+          <h2>Impactul nu se vede într-o singură sticlă.<br><span class="mark">Se vede în obicei.</span></h2>
+          <p>Nu avem încă date măsurate despre plasticul economisit. Avem însă o direcție clară: mai puține ambalaje de unică folosință, recipiente folosite mai mult și un consum mai responsabil.</p>
+        </div>
+
+        <div class="impact-points" data-reveal>
+          <article class="impact-point">
+            <svg viewBox="0 0 48 48" aria-hidden="true">
+              <path d="M12 25l18-11v23L12 26Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+              <path d="M12 25H7v9h5M30 19l7-4M30 30l7 4" fill="none" stroke="#A8E66B" stroke-width="2.4" stroke-linecap="round"/>
+              <path d="M5 12L43 38" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+            </svg>
+            <h3>Mai puține ambalaje de unică folosință</h3>
+            <p>Refillul mută accentul de pe ambalajul care se aruncă pe recipientul care rămâne în uz.</p>
+          </article>
+          <article class="impact-point">
+            <svg viewBox="0 0 48 48" aria-hidden="true">
+              <path d="M38 24a14 14 0 1 1-5-10.8" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+              <path d="M38 7v10H28" fill="none" stroke="#A8E66B" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M20 32c-4-7-1-12 5-15 1 7 0 12-5 15Z" fill="#A8E66B"/>
+            </svg>
+            <h3>Reutilizarea recipientelor</h3>
+            <p>Un recipient care se întoarce în circuit de mai multe ori înlocuiește repetiția inutilă a unui ambalaj nou.</p>
+          </article>
+          <article class="impact-point">
+            <svg viewBox="0 0 48 48" aria-hidden="true">
+              <path d="M24 41C18 29 7 25 10 15C13 6 25 5 38 7C40 20 35 32 26 38Z" fill="none" stroke="currentColor" stroke-width="2.4"/>
+              <path d="M24 41C27 29 31 17 38 9" fill="none" stroke="#A8E66B" stroke-width="2.4" stroke-linecap="round"/>
+              <path d="M28 30L16 18M31 21L23 14" stroke="#A8E66B" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            <h3>Un consum mai responsabil</h3>
+            <p>Schimbarea nu vine dintr-un gest perfect, ci dintr-un comportament pe care poți să îl repeți.</p>
+          </article>
+        </div>
+
+        <div class="impact-sim" data-reveal>
+          <div class="impact-sim-copy">
+            <span class="label">SIMULARE ILUSTRATIVĂ</span>
+            <h3>Ce ai putea schimba?</h3>
+            <p>Alege câte reumpleri faci într-o lună. Rezultatul este o estimare simplificată a conceptului, nu o măsurătoare de impact.</p>
+          </div>
+          <div class="impact-sim-control">
+            <label for="refills">Reumpleri pe lună</label>
+            <div class="range-row">
+              <input type="range" id="refills" min="1" max="30" value="8" step="1">
+              <output id="refill-output" for="refills">8</output>
+            </div>
+            <div class="impact-results">
+              <div><strong id="year-refills">96</strong><span>reumpleri într-un an</span></div>
+              <div><strong id="avoided">96</strong><span>ambalaje noi evitate*</span></div>
+            </div>
+            <p class="sim-note">*Estimare ilustrativă: o reumplere este tratată ca un ambalaj nou evitat. Impactul real depinde de sistemul folosit.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section business" id="business">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <span class="section-index">04 — MODELUL DE BUSINESS</span>
+          <span class="section-note">PROIECȚII DE CONCEPT</span>
+        </div>
+
+        <div class="split-heading" data-reveal>
+          <h2>Un obicei recurent.<br><span class="mark">O afacere care se susține.</span></h2>
+          <div>
+            <p>EcoFill nu vinde doar un aparat. Propune un ciclu: stația se cumpără o singură dată, iar cartușele refill revin lunar. Recurența este ce poate transforma un obiect util într-un model sustenabil.</p>
+            <p class="tag">TOATE VALORILE SUNT PROIECȚII ALE CONCEPTULUI</p>
+          </div>
+        </div>
+
+        <div class="business-layout" data-reveal>
+          <div class="biz-metrics">
+            <div class="biz-metric">
+              <strong>62%</strong>
+              <span>marjă brută țintă</span>
+              <small>pe cartușele refill</small>
+            </div>
+            <div class="biz-metric">
+              <strong>29 lei</strong>
+              <span>abonament lunar</span>
+              <small>un cartuș inclus</small>
+            </div>
+            <div class="biz-metric">
+              <strong>4,2×</strong>
+              <span>raport LTV / CAC</span>
+              <small>valoare client / cost de achiziție</small>
+            </div>
+            <div class="biz-metric">
+              <strong>14 luni</strong>
+              <span>prag de rentabilitate estimat</span>
+              <small>în modelul recurent</small>
+            </div>
+          </div>
+
+          <div class="biz-scenario">
+            <div class="biz-scenario-head">
+              <span>SCENARIU ILUSTRATIV / 1.000 DE ABONAȚI</span>
+              <span>LUNAR</span>
+            </div>
+            <div class="biz-line">
+              <span>Venit lunar</span>
+              <strong>29.000 lei</strong>
+            </div>
+            <div class="biz-line">
+              <span>Cost produs estimat</span>
+              <strong>− 11.020 lei</strong>
+            </div>
+            <div class="biz-line biz-line--total">
+              <span>Profit brut lunar estimat</span>
+              <strong>17.980 lei</strong>
+            </div>
+            <div class="biz-scenario-foot">
+              <span>1 cartuș / abonat / lună</span>
+              <span>29 lei / cartuș</span>
+            </div>
+          </div>
+        </div>
+
+        <p class="business-note" data-reveal>Valorile sunt estimări de concept, nu rezultate financiare auditate sau promisiuni de venit. Rezultatele reale depind de costuri, retenție, achiziția clienților și modelul operațional.</p>
+      </div>
+    </section>
+
+    <section class="section section--warm products" id="produse">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <span class="section-index">05 — PRODUSUL</span>
+          <span class="section-note">STAȚIA ECOFILL / CONCEPT</span>
+        </div>
+
+        <div class="product-showcase" data-reveal>
+          <div class="product-copy">
+            <p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span> UN APARAT CARE RĂMÂNE</p>
+            <h2>Un cartuș se schimbă.<br><span class="mark">Recipientul rămâne.</span></h2>
+            <p>Stația EcoFill este gândită ca un prototip conceptual pentru acasă: un corp care rămâne în uz, un cartuș de refill și un spațiu simplu în care recipientul tău se reumple.</p>
+            <ul class="feature-list">
+              <li><span>01</span>Pompă pentru dozare controlată</li>
+              <li><span>02</span>Rezervor pentru produsul de reumplere</li>
+              <li><span>03</span>Cartuș refill înlocuibil sau reîncărcabil</li>
+              <li><span>04</span>Tavă de picurare, ușor de curățat</li>
+            </ul>
+            <a class="button button--dark" href="product.html">Explorează aparatul <span aria-hidden="true">↗</span></a>
+          </div>
+
+          <div class="product-art" aria-hidden="true">
+            <svg viewBox="0 0 420 560">
+              <circle cx="210" cy="268" r="190" fill="#A8E66B"/>
+              <path d="M120 238h180v170c0 22-14 34-36 34h-108c-22 0-36-12-36-34z" fill="#174D32"/>
+              <rect x="150" y="208" width="120" height="38" rx="12" fill="#174D32"/>
+              <rect x="166" y="222" width="88" height="14" rx="7" fill="#A8E66B"/>
+              <rect x="238" y="194" width="16" height="38" rx="8" fill="#174D32"/>
+              <rect x="222" y="178" width="48" height="18" rx="9" fill="#174D32"/>
+              <rect x="146" y="278" width="128" height="74" rx="10" fill="#F7F8F2"/>
+              <text x="210" y="307" text-anchor="middle" font-family="Manrope, sans-serif" font-size="16" font-weight="800" letter-spacing="2" fill="#174D32">ECO FILL</text>
+              <text x="210" y="326" text-anchor="middle" font-family="DM Mono, monospace" font-size="8" letter-spacing="2" fill="#60665F">REFILL STATION</text>
+              <rect x="158" y="372" width="104" height="12" rx="6" fill="#A8E66B"/>
+              <circle cx="210" cy="407" r="4" fill="#A8E66B"/>
+              <path d="M172 168h76" stroke="#174D32" stroke-width="2" stroke-dasharray="5 8" opacity=".45"/>
+              <path d="M210 150v18" stroke="#174D32" stroke-width="2" opacity=".45"/>
+              <circle cx="210" cy="140" r="9" fill="#F7F8F2" stroke="#174D32" stroke-width="2"/>
+              <path d="M206 140l3 3 5-6" fill="none" stroke="#174D32" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M88 476h244" stroke="#174D32" stroke-width="2" opacity=".28"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing" id="contact">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <span class="section-index">06 — CONTACT</span>
+          <span class="section-note">URMĂTORUL PAS</span>
+        </div>
+        <div class="closing-grid" data-reveal>
+          <h2>Mai puțină risipă.<br><span class="mark">Mai mult sens.</span></h2>
+          <div class="closing-copy">
+            <p>EcoFill este un concept aflat în dezvoltare. Dacă ai o întrebare, o idee sau vrei să afli mai multe, scrie-ne. Suntem la început și ascultăm.</p>
+            <!-- TODO: contact@ecofill.ro este o adresă provizorie. Confirmă adresa finală înainte de lansare. -->
+            <a class="button button--dark" href="mailto:contact@ecofill.ro?subject=Salut%20EcoFill">Hai să vorbim <span aria-hidden="true">↗</span></a>
+            <p class="contact-note">Adresă de contact provizorie: <span>contact@ecofill.ro</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a class="brand" href="index.html" aria-label="EcoFill — pagina principală">
+            <svg class="brand-leaf" viewBox="0 0 32 36" aria-hidden="true">
+              <path d="M16 33C13 23 5 18 7 9C9 2 18 1 27 3C28 13 24 22 18 27Z" fill="currentColor"/>
+              <path d="M16 33C17 23 20 12 26 5" fill="none" stroke="#F7F8F2" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            <span class="brand-word"><span>eco</span><span>fill</span></span>
+          </a>
+          <p>Umplii recipientul, nu planeta cu plastic.</p>
+        </div>
+
+        <nav class="footer-nav" aria-label="Navigare în subsol">
+          <a href="index.html">Acasă</a>
+          <a href="about.html">Despre noi</a>
+          <a href="product.html">Despre produs</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="footer-contact">
+          <span>Ai o idee pentru EcoFill?</span>
+          <a href="mailto:salut@ecofill.ro?subject=Salut%20EcoFill">contact@ecofill.ro <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© <span id="year"></span> EcoFill — proiect conceptual</span>
+        <span>Refill / Reuse / Repeat</span>
+        <a href="#top">Înapoi sus ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <aside class="scroll-rail" id="scroll-rail" aria-hidden="true">
+    <span class="rail-cap rail-cap--leaf">
+      <svg viewBox="0 0 32 36" aria-hidden="true">
+        <path d="M16 33C13 23 5 18 7 9C9 2 18 1 27 3C28 13 24 22 18 27Z" fill="#174D32"/>
+        <path d="M16 33C17 23 20 12 26 5" fill="none" stroke="#F7F8F2" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </span>
+    <div class="rail-track">
+      <span class="rail-line"></span>
+      <span class="rail-fill" id="rail-fill"></span>
+      <span class="rail-node" data-node="0"></span>
+      <span class="rail-node" data-node="1"></span>
+      <span class="rail-node" data-node="2"></span>
+      <span class="rail-node" data-node="3"></span>
+      <span class="rail-node" data-node="4"></span>
+      <span class="rail-thumb" id="rail-thumb">
+        <svg viewBox="0 0 24 26" aria-hidden="true">
+          <path id="rail-thumb-shape" d="M12 1.5C9.5 6 5.5 11 5 16C4.6 19.5 7.5 22 12 24.5C16.5 22 19.4 19.5 19 16C18.5 11 14.5 6 12 1.5Z" fill="#174D32"/>
+          <path id="rail-thumb-vein" d="M12 3.4C10.8 9.6 10.4 15 12 22.6" fill="none" stroke="#F7F8F2" stroke-width="1.3" stroke-linecap="round"/>
+          <path id="rail-thumb-spark" d="M8.6 18.4A3.7 3.7 0 0 0 12.3 22.1" fill="none" stroke="#FFD6EE" stroke-width="1.6" stroke-linecap="round" opacity="0"/>
+        </svg>
+      </span>
+    </div>
+    <span class="rail-cap rail-cap--drop">
+      <svg viewBox="0 0 24 28" aria-hidden="true">
+        <path d="M12 2C12 2 21 13 21 18.5A9 9 0 0 1 3 18.5C3 13 12 2 12 2Z" fill="#FF2D9B"/>
+        <path d="M8.4 18.6a3.6 3.6 0 0 0 3.6 3.6" fill="none" stroke="#FFD6EE" stroke-width="1.8" stroke-linecap="round"/>
+      </svg>
+    </span>
+  </aside>
+</body>
+</html>

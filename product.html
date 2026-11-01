@@ -1,0 +1,405 @@
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#FFFFFF">
+  <meta name="description" content="Despre produsul EcoFill — stația de reumplere în patru componente interactive și un joc prin care poți simula o reumplere.">
+  <title>Despre produs — EcoFill</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add("js");</script>
+  <script src="app.js" defer></script>
+</head>
+<body id="top" class="page-inner">
+  <a class="skip-link" href="#main">Sari la conținut</a>
+  <div class="progress" aria-hidden="true"><span id="progress-bar"></span></div>
+
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="EcoFill — pagina principală">
+        <svg class="brand-leaf" viewBox="0 0 32 36" aria-hidden="true">
+          <path d="M16 33C13 23 5 18 7 9C9 2 18 1 27 3C28 13 24 22 18 27Z" fill="currentColor"/>
+          <path d="M16 33C17 23 20 12 26 5" fill="none" stroke="#F7F8F2" stroke-width="2" stroke-linecap="round"/>
+          <path d="M20 20L12 12M22 13L17 8" stroke="#F7F8F2" stroke-width="1.6" stroke-linecap="round"/>
+        </svg>
+        <span class="brand-word"><span>eco</span><span>fill</span></span>
+      </a>
+
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Deschide meniul">
+        <span></span><span></span>
+      </button>
+
+      <nav class="main-nav" id="main-nav" aria-label="Navigare principală">
+        <a href="index.html">Acasă</a>
+        <a href="about.html">Despre noi</a>
+        <a href="product.html" aria-current="page">Despre produs</a>
+        <a href="index.html#contact">Contact</a>
+        <a class="nav-cta" href="mailto:salut@ecofill.ro?subject=Salut%20EcoFill">Scrie-ne <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="sub-hero" aria-labelledby="product-title">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Firimituri de navigare">
+          <a href="index.html">Acasă</a><span aria-hidden="true">/</span><span>Despre produs</span>
+        </nav>
+
+        <div class="sub-hero-grid" data-reveal>
+          <div>
+            <p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span> DESPRE PRODUS / STAȚIA ECOFILL</p>
+            <h1 id="product-title">Un aparat.<br><span class="mark">Patru piese. Un gest.</span></h1>
+          </div>
+          <p class="sub-hero-lead">EcoFill este un prototip conceptual de stație de reumplere pentru acasă. Păstrezi corpul aparatului, schimbi sau reîncarci cartușul și folosești același recipient iar și iar. Simplu de privit, simplu de înțeles, simplu de repetat.</p>
+        </div>
+
+        <div class="sub-hero-meta" data-reveal>
+          <span>CONCEPT / REFILL STATION</span>
+          <span>COMPONENTE / 04</span>
+          <span>PENTRU / ACASĂ</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section anatomy" id="anatomie">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <span class="section-index">01 — ANATOMIE</span>
+          <span class="section-note">PROTOTIP CONCEPTUAL / INTERACTIV</span>
+        </div>
+
+        <div class="split-heading" data-reveal>
+          <h2>Patru componente.<br><span class="mark">Fiecare cu un rost.</span></h2>
+          <p>Alege o componentă din ilustrație sau din listă pentru a vedea ce face. Niciun detaliu decorativ: fiecare formă are un rol în ciclul de refill.</p>
+        </div>
+
+        <div class="anatomy-layout" id="anatomy-layout" data-active="pump" data-reveal>
+          <div class="anatomy-stage">
+            <span class="stage-hint">APASĂ PE O COMPONENTĂ / 01—04</span>
+            <svg class="machine-svg" viewBox="0 0 460 840" role="img" aria-labelledby="machine-title machine-desc">
+              <title id="machine-title">Aparatul EcoFill desfăcut în patru componente</title>
+              <desc id="machine-desc">Pompa dozatoare, rezervorul, cartușul de refill și tava de picurare, separate pentru a arăta cum funcționează sistemul.</desc>
+              <defs>
+                <clipPath id="tank-window-clip"><rect x="144" y="276" width="172" height="184" rx="10"/></clipPath>
+              </defs>
+
+              <g class="explode-guides" aria-hidden="true">
+                <line x1="230" y1="28" x2="230" y2="814" stroke="#174D32" stroke-opacity=".18" stroke-width="1.5" stroke-dasharray="4 9"/>
+                <line x1="198" y1="218" x2="262" y2="218" stroke="#174D32" stroke-opacity=".18" stroke-width="1.5"/>
+                <line x1="198" y1="516" x2="262" y2="516" stroke="#174D32" stroke-opacity=".18" stroke-width="1.5"/>
+                <line x1="198" y1="720" x2="262" y2="720" stroke="#174D32" stroke-opacity=".18" stroke-width="1.5"/>
+              </g>
+
+              <g class="sp sp-pump" data-part="pump" tabindex="0" role="button" aria-pressed="true" aria-label="Pompa dozatoare" aria-controls="part-readout">
+                <rect class="part-halo" x="82" y="30" width="296" height="172" rx="30"/>
+                <rect x="115" y="44" width="230" height="86" rx="20" fill="#174D32"/>
+                <rect x="145" y="64" width="170" height="34" rx="9" fill="#A8E66B"/>
+                <circle cx="130" cy="87" r="4" fill="#A8E66B"/>
+                <text x="230" y="86" text-anchor="middle" fill="#174D32" font-family="DM Mono, monospace" font-size="10" letter-spacing="2">PRESS</text>
+                <rect x="205" y="130" width="50" height="22" fill="#174D32"/>
+                <rect x="218" y="152" width="24" height="20" rx="7" fill="#174D32"/>
+                <path d="M230 178v14" stroke="#174D32" stroke-width="3" stroke-linecap="round"/>
+                <circle cx="230" cy="198" r="4" fill="#A8E66B"/>
+                <g class="part-no" aria-hidden="true"><circle cx="395" cy="64" r="15" fill="#174D32"/><text x="395" y="68" text-anchor="middle" fill="#A8E66B" font-family="DM Mono, monospace" font-size="10">01</text></g>
+              </g>
+
+              <g class="sp sp-tank" data-part="tank" tabindex="0" role="button" aria-pressed="false" aria-label="Rezervorul aparatului" aria-controls="part-readout">
+                <rect class="part-halo" x="84" y="222" width="292" height="288" rx="32"/>
+                <rect x="120" y="230" width="220" height="16" rx="8" fill="#174D32"/>
+                <rect x="120" y="246" width="220" height="246" rx="24" fill="#F7F8F2" stroke="#174D32" stroke-width="4"/>
+                <rect x="142" y="276" width="176" height="184" rx="12" fill="#EAF0E4" stroke="#174D32" stroke-width="2"/>
+                <g clip-path="url(#tank-window-clip)">
+                  <rect x="144" y="360" width="172" height="98" fill="#A8E66B"/>
+                  <path d="M144 360h172" stroke="#79C943" stroke-width="3"/>
+                  <circle cx="160" cy="418" r="3" fill="#174D32" opacity=".18"/>
+                  <circle cx="190" cy="438" r="2" fill="#174D32" opacity=".18"/>
+                </g>
+                <text x="230" y="312" text-anchor="middle" fill="#174D32" font-family="Manrope, sans-serif" font-size="15" font-weight="800" letter-spacing="1.6">ECO FILL</text>
+                <text x="230" y="330" text-anchor="middle" fill="#60665F" font-family="DM Mono, monospace" font-size="7" letter-spacing="1.5">REFILL STATION / 01</text>
+                <circle cx="230" cy="482" r="3" fill="#174D32" opacity=".35"/>
+                <g class="part-no" aria-hidden="true"><circle cx="395" cy="262" r="15" fill="#174D32"/><text x="395" y="266" text-anchor="middle" fill="#A8E66B" font-family="DM Mono, monospace" font-size="10">02</text></g>
+              </g>
+
+              <g class="sp sp-cartridge" data-part="cartridge" tabindex="0" role="button" aria-pressed="false" aria-label="Cartușul de refill" aria-controls="part-readout">
+                <rect class="part-halo" x="86" y="524" width="292" height="190" rx="32"/>
+                <rect x="180" y="548" width="100" height="28" rx="8" fill="#174D32"/>
+                <rect x="150" y="570" width="160" height="120" rx="22" fill="#A8E66B" stroke="#174D32" stroke-width="3"/>
+                <rect x="172" y="600" width="116" height="58" rx="8" fill="#174D32"/>
+                <text x="230" y="622" text-anchor="middle" fill="#F7F8F2" font-family="Manrope, sans-serif" font-size="10" font-weight="800" letter-spacing="1.4">REFILL</text>
+                <text x="230" y="638" text-anchor="middle" fill="#A8E66B" font-family="DM Mono, monospace" font-size="7" letter-spacing="1.4">750 ML</text>
+                <path d="M174 674h112" stroke="#174D32" stroke-width="1.5" opacity=".4"/>
+                <circle cx="230" cy="682" r="2.4" fill="#174D32" opacity=".5"/>
+                <g class="part-no" aria-hidden="true"><circle cx="395" cy="582" r="15" fill="#174D32"/><text x="395" y="586" text-anchor="middle" fill="#A8E66B" font-family="DM Mono, monospace" font-size="10">03</text></g>
+              </g>
+
+              <g class="sp sp-tray" data-part="tray" tabindex="0" role="button" aria-pressed="false" aria-label="Tava de picurare" aria-controls="part-readout">
+                <rect class="part-halo" x="62" y="736" width="336" height="76" rx="26"/>
+                <rect x="80" y="750" width="300" height="50" rx="16" fill="#174D32"/>
+                <rect x="104" y="762" width="252" height="18" rx="8" fill="#A8E66B"/>
+                <path d="M132 770h196M158 762v18M230 762v18M302 762v18" stroke="#174D32" stroke-width="1.4" opacity=".28"/>
+                <g class="part-no" aria-hidden="true"><circle cx="395" cy="775" r="15" fill="#174D32"/><text x="395" y="779" text-anchor="middle" fill="#A8E66B" font-family="DM Mono, monospace" font-size="10">04</text></g>
+              </g>
+            </svg>
+          </div>
+
+          <div class="anatomy-link" aria-hidden="true">
+            <span class="link-line"></span>
+            <span class="link-dot" data-part="pump"><b>01</b></span>
+            <span class="link-dot" data-part="tank"><b>02</b></span>
+            <span class="link-dot" data-part="cartridge"><b>03</b></span>
+            <span class="link-dot" data-part="tray"><b>04</b></span>
+          </div>
+
+          <div class="anatomy-panel">
+            <div class="part-readout" id="part-readout" aria-live="polite">
+              <span class="part-kicker" id="part-kicker">01 / POMPĂ</span>
+              <h3 id="part-title">Pompa dozatoare</h3>
+              <p id="part-desc">Pompa dozează produsul și îl transferă controlat din rezervor în recipient. Un gest scurt, fără să deschizi un ambalaj nou.</p>
+              <ul class="part-facts" id="part-facts">
+                <li>Dozează cantitatea necesară.</li>
+                <li>Transfer controlat, fără scurgeri.</li>
+              </ul>
+            </div>
+
+            <div class="part-tabs" role="group" aria-label="Alege o componentă">
+              <button class="part-tab is-active" type="button" data-part="pump" aria-pressed="true"><span>01</span>Pompă</button>
+              <button class="part-tab" type="button" data-part="tank" aria-pressed="false"><span>02</span>Rezervor</button>
+              <button class="part-tab" type="button" data-part="cartridge" aria-pressed="false"><span>03</span>Cartuș</button>
+              <button class="part-tab" type="button" data-part="tray" aria-pressed="false"><span>04</span>Tavă</button>
+            </div>
+
+            <p class="anatomy-note">Prototip conceptual. Mecanismul nu a fost testat fizic; configurația finală urmează să fie validată.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--warm refill-why" id="de-ce-refill">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <span class="section-index">02 — DE CE REFILL</span>
+          <span class="section-note">DE LA OBIECT LA OBICEI</span>
+        </div>
+
+        <div class="split-heading" data-reveal>
+          <h2>Refillul mută accentul.<br><span class="mark">De la obiect la obicei.</span></h2>
+          <p>Nu trebuie să cumperi un recipient nou de fiecare dată. Trebuie doar să reumpli pe cel care funcționează deja.</p>
+        </div>
+
+        <div class="why-grid" data-reveal>
+          <article class="why-item">
+            <span class="why-num">01</span>
+            <h3>Aparatul rămâne</h3>
+            <p>Corpul stației este gândit să rămână în uz, nu să ajungă la coș după o singură utilizare.</p>
+          </article>
+          <article class="why-item">
+            <span class="why-num">02</span>
+            <h3>Cartușul se schimbă</h3>
+            <p>Partea consumabilă este cartușul. Poate fi înlocuit sau reîncărcat, în funcție de configurația finală a aparatului.</p>
+          </article>
+          <article class="why-item">
+            <span class="why-num">03</span>
+            <h3>Recipientul este al tău</h3>
+            <p>Folosești sticla care îți place, se potrivește în suport și rămâne în rutina ta.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--dark game-section" id="joaca">
+      <div class="container">
+        <div class="section-head section-head--dark" data-reveal>
+          <span class="section-index">03 — SIMULARE</span>
+          <span class="section-note">ÎNCEARCĂ STAȚIA</span>
+        </div>
+
+        <div class="split-heading split-heading--dark" data-reveal>
+          <h2>Reumple.<br><span class="mark">Fără să arunci.</span></h2>
+          <p>Alege un parfum și ține apăsat aproximativ 1,6 secunde. Nivelul din sticlă crește, iar contoarele se actualizează la final. Totul este o simulare.</p>
+        </div>
+
+        <div class="game-layout" data-reveal>
+          <div class="game-stage" id="game-stage">
+            <div class="game-display">
+              <div class="game-statusbar">
+                <span>REFILL STATION</span>
+                <span id="gm-screen">READY</span>
+              </div>
+
+              <div class="game-machine">
+                <div class="gm-head">
+                  <span class="gm-led" aria-hidden="true"></span>
+                  <span class="gm-brand">eco fill</span>
+                </div>
+
+                <div class="gm-pump" aria-hidden="true">
+                  <span class="gm-press"></span>
+                  <span class="gm-nozzle"></span>
+                  <span class="gm-stream"></span>
+                </div>
+
+                <div class="gm-body" aria-hidden="true">
+                  <div class="gm-window">
+                    <span class="gm-window-fill"></span>
+                    <span class="gm-window-label">REFILL<br>STATION</span>
+                  </div>
+                </div>
+
+                <div class="gm-bottle" id="gm-bottle" aria-hidden="true">
+                  <span class="gb-cap"></span>
+                  <span class="gb-body">
+                    <span class="gb-liquid" id="gb-liquid"></span>
+                    <span class="gb-label">eco<br>fill</span>
+                  </span>
+                </div>
+
+                <div class="gm-tray" aria-hidden="true"><span></span></div>
+                <span class="game-drop" aria-hidden="true"></span>
+              </div>
+            </div>
+            <p class="stage-note">Demonstrație vizuală. Produsul real este în faza de prototip conceptual.</p>
+          </div>
+
+          <div class="game-panel">
+            <div class="panel-step">
+              <span>01</span>
+              <h3>Alege parfumul</h3>
+            </div>
+            <div class="scent-picker" role="group" aria-label="Alege parfumul">
+              <button class="scent is-active" type="button" data-scent="Verde" aria-pressed="true">
+                <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 28C12 19 5 15 6 8C7 3 15 2 25 4C26 13 23 21 17 25Z" fill="currentColor"/><path d="M16 28C17 19 20 11 25 5" fill="none" stroke="#F7F8F2" stroke-width="1.6" stroke-linecap="round"/></svg>
+                Verde
+              </button>
+              <button class="scent" type="button" data-scent="Citrice" aria-pressed="false">
+                <svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="10" fill="none" stroke="currentColor" stroke-width="2.4"/><path d="M16 6v20M6 16h20M9 9l14 14M23 9L9 23" stroke="currentColor" stroke-width="1.4" opacity=".7"/><circle cx="16" cy="16" r="3" fill="currentColor"/></svg>
+                Citrice
+              </button>
+              <button class="scent" type="button" data-scent="Lavandă" aria-pressed="false">
+                <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 27V12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M16 8C12 4 7 5 6 10C5 15 10 18 16 16C22 18 27 15 26 10C25 5 20 4 16 8Z" fill="currentColor"/><path d="M16 16C12 19 12 24 16 27C20 24 20 19 16 16Z" fill="currentColor" opacity=".65"/></svg>
+                Lavandă
+              </button>
+            </div>
+
+            <div class="panel-step panel-step--second">
+              <span>02</span>
+              <h3>Ține apăsat pentru refill</h3>
+            </div>
+            <button class="game-fill" id="game-fill" type="button" aria-describedby="fill-help">
+              <span class="game-fill-icon" aria-hidden="true">
+                <svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="16" fill="none" stroke="currentColor" stroke-width="2" opacity=".28"/><path d="M20 10v20M10 20h20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+              </span>
+              <span class="game-fill-label">Ține apăsat 1,6 s</span>
+            </button>
+            <p class="fill-help" id="fill-help">Funcționează cu mouse, tastatură sau touch.</p>
+
+            <div class="fill-meter-wrap">
+              <div class="fill-meter" role="progressbar" aria-label="Nivelul din recipient" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="fill-progress"><span id="fill-bar"></span></div>
+              <span class="fill-value" id="fill-value">0%</span>
+            </div>
+
+            <p class="game-status" id="game-status" role="status" aria-live="polite">Alege un parfum și ține apăsat pentru a începe.</p>
+
+            <div class="game-stats">
+              <div><strong id="refill-count">0</strong><span>reumpleri reușite</span></div>
+              <div><strong id="avoided-count">0</strong><span>ambalaje evitate · simulare</span></div>
+              <div><strong id="scent-name">Verde</strong><span>parfum ales</span></div>
+            </div>
+
+            <p class="game-disclaimer">Numărul de ambalaje evitate este o simulare ilustrativă, nu o măsurătoare reală de impact.</p>
+
+            <button class="game-reset" id="game-reset" type="button">Resetează simularea <span aria-hidden="true">↺</span></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing closing--product" id="contact">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <span class="section-index">04 — CONTACT</span>
+          <span class="section-note">URMĂTORUL PAS</span>
+        </div>
+        <div class="closing-grid" data-reveal>
+          <h2>Vrei să testezi<br><span class="mark">primul prototip?</span></h2>
+          <div class="closing-copy">
+            <p>Construim EcoFill pas cu pas. Dacă vrei să fii printre primii care îl încearcă sau vrei să contribui cu o idee, scrie-ne.</p>
+            <!-- TODO: contact@ecofill.ro este o adresă provizorie. Confirmă adresa finală înainte de lansare. -->
+            <a class="button button--dark" href="mailto:contact@ecofill.ro?subject=Test%20prototip%20EcoFill">Scrie-ne <span aria-hidden="true">↗</span></a>
+            <p class="contact-note">Adresă de contact provizorie: <span>contact@ecofill.ro</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a class="brand" href="index.html" aria-label="EcoFill — pagina principală">
+            <svg class="brand-leaf" viewBox="0 0 32 36" aria-hidden="true">
+              <path d="M16 33C13 23 5 18 7 9C9 2 18 1 27 3C28 13 24 22 18 27Z" fill="currentColor"/>
+              <path d="M16 33C17 23 20 12 26 5" fill="none" stroke="#F7F8F2" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            <span class="brand-word"><span>eco</span><span>fill</span></span>
+          </a>
+          <p>Umplii recipientul, nu planeta cu plastic.</p>
+        </div>
+
+        <nav class="footer-nav" aria-label="Navigare în subsol">
+          <a href="index.html">Acasă</a>
+          <a href="about.html">Despre noi</a>
+          <a href="product.html">Despre produs</a>
+          <a href="index.html#contact">Contact</a>
+        </nav>
+
+        <div class="footer-contact">
+          <span>Ai o idee pentru EcoFill?</span>
+          <a href="mailto:contact@ecofill.ro?subject=Salut%20EcoFill">contact@ecofill.ro <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© <span id="year"></span> EcoFill — proiect conceptual</span>
+        <span>Refill / Reuse / Repeat</span>
+        <a href="#top">Înapoi sus ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <aside class="scroll-rail" id="scroll-rail" aria-hidden="true">
+    <span class="rail-cap rail-cap--leaf">
+      <svg viewBox="0 0 32 36" aria-hidden="true">
+        <path d="M16 33C13 23 5 18 7 9C9 2 18 1 27 3C28 13 24 22 18 27Z" fill="#174D32"/>
+        <path d="M16 33C17 23 20 12 26 5" fill="none" stroke="#F7F8F2" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </span>
+    <div class="rail-track">
+      <span class="rail-line"></span>
+      <span class="rail-fill" id="rail-fill"></span>
+      <span class="rail-node" data-node="0"></span>
+      <span class="rail-node" data-node="1"></span>
+      <span class="rail-node" data-node="2"></span>
+      <span class="rail-node" data-node="3"></span>
+      <span class="rail-node" data-node="4"></span>
+      <span class="rail-thumb" id="rail-thumb">
+        <svg viewBox="0 0 24 26" aria-hidden="true">
+          <path id="rail-thumb-shape" d="M12 1.5C9.5 6 5.5 11 5 16C4.6 19.5 7.5 22 12 24.5C16.5 22 19.4 19.5 19 16C18.5 11 14.5 6 12 1.5Z" fill="#174D32"/>
+          <path id="rail-thumb-vein" d="M12 3.4C10.8 9.6 10.4 15 12 22.6" fill="none" stroke="#F7F8F2" stroke-width="1.3" stroke-linecap="round"/>
+          <path id="rail-thumb-spark" d="M8.6 18.4A3.7 3.7 0 0 0 12.3 22.1" fill="none" stroke="#FFD6EE" stroke-width="1.6" stroke-linecap="round" opacity="0"/>
+        </svg>
+      </span>
+    </div>
+    <span class="rail-cap rail-cap--drop">
+      <svg viewBox="0 0 24 28" aria-hidden="true">
+        <path d="M12 2C12 2 21 13 21 18.5A9 9 0 0 1 3 18.5C3 13 12 2 12 2Z" fill="#FF2D9B"/>
+        <path d="M8.4 18.6a3.6 3.6 0 0 0 3.6 3.6" fill="none" stroke="#FFD6EE" stroke-width="1.8" stroke-linecap="round"/>
+      </svg>
+    </span>
+  </aside>
+</body>
+</html>
